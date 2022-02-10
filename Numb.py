@@ -30,7 +30,7 @@ ccode=country_code_for_region(isocode)
 #Valid and possible are opcionals for you :)
 valid=phonenumbers.is_valid_number(pn)
 possible=phonenumbers.is_possible_number(pn)
-#mala
+
 st=str(timezone)
 cat=st.translate(str.maketrans({'(': ' ', ')': ' ',',':' '}))
 cut=cat.replace("'", " ")
@@ -51,9 +51,10 @@ print("[3] Carrier: "+str(carrier))
 print("[4] Time zone: "+str(var))
 print("[5] Current time: "+str(time))
 print("[6]"+W+info)
-print("
-░█▀▀▄ ▄█─ ░█▀▄▀█ ░█▀▀▀█ ░█▀▀▄ 
-░█─░█ ─█─ ░█░█░█ ░█──░█ ░█─░█ 
-░█▄▄▀ ▄█▄ ░█──░█ ░█▄▄▄█ ░█▄▄▀")
-
-#Written by Hidden mala
+print(G+'''\
+██████╗░░░███╗░░███╗░░░███╗░█████╗░██████╗░
+██╔══██╗░████║░░████╗░████║██╔══██╗██╔══██╗
+██║░░██║██╔██║░░██╔████╔██║██║░░██║██║░░██║
+██║░░██║╚═╝██║░░██║╚██╔╝██║██║░░██║██║░░██║
+██████╔╝███████╗██║░╚═╝░██║╚█████╔╝██████╔╝
+╚═════╝░╚══════╝╚═╝░░░░░╚═╝░╚════╝░╚═════╝░''')
